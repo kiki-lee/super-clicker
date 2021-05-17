@@ -4,7 +4,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(assets.image`Big Star`, mySprite, randint(-100, 100), randint(-50, -100))
 })
 info.onCountdownEnd(function () {
-    game.over(true, effects.confetti)
+    game.over(true, effects.hearts)
 })
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
     mySprite.setImage(assets.image`A static`)
